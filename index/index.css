@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #191919;
+    font-family: sans-serif;
+    display: block;
+    margin: auto;
+    width: 100%;
+    min-height: 100vh;
+    max-width: 1400px;
+}
+
+.container span {
+    cursor: help;
+}
+
+.container span:hover {
+    border-bottom: 1px solid white;
+    /*Każda osobna wartość jest podkreślana*/
+}
+
+.nawigacja {
+    background: #1a1a1a;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    min-width: 100%;
+    z-index: 9;
+    top: 0;
+    left: 0;
+}
+
+.nawigacja .link-group .logonav {
+    cursor: help;
+}
+
+.nawigacja .link-group .logonav:hover {
+    opacity: 0.6;
+    transition: 1.5s;
+}
+
+.link-group {
+    display: flex;
+    list-style: none;
+}
+
+.link a {
+    color: #fff;
+    text-transform: capitalize;
+    text-decoration: none;
+    margin: 0 20px;
+    padding: 10px 30px;
+    line-height: 80px;
+    font-size: 20px;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.nawigacja span {
+    color: #fff;
+    text-decoration: none;
+    line-height: 80px;
+    font-size: 20px;
+    opacity: 0.5;
+}
+
+.nawigacja img {
+    border-radius: 50%;
+}
+
+img {
+    width: 55px;
+    height: 80px;
+}
+
+.link a:hover, 
+.link.active a {
+    opacity: 1;
+}
+
+.link.active a:hover, 
+.link a:hover {
+    color: rgb(102, 102, 102);
+}
+
+.sekcja {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding: 0 150px;
+    height: 100vh;
+    width: 100%;
+    opacity: 0;
+    transition: 1s;
+    top: 0;
+}
+
+.napis {
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 300;
+    font-size: 120px;
+}
+
+.zdjecie {
+    position: absolute;
+    object-fit: cover;
+    height: 100vh;
+    width: 50%;
+    top: 0;
+    right: 0;
+    opacity: 0.4;
+}
+
+.sekcja {
+    position: fixed;
+}
+
+.sekcja.active,
+.project-section.active,
+.about-section.active,
+.contact-section.active {
+    position: relative;
+    z-index: 8;
+    opacity: 1;
+}
+
+footer {
+    text-align: end;
+    color: rgb(189, 189, 189);
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+}
+
+@media only screen and (max-width:1310px) {
+    body {
+        width: 5900px;
+    }
+}

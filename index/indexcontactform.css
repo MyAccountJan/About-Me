@@ -1,0 +1,200 @@
+* {
+    color: white;
+    overflow: hidden;
+}
+
+.kontakt .title {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 40px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid white;
+}
+
+.kontakt {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20%;
+}
+
+
+.kontakt .zawartosc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-bottom: 15px;
+    border-radius: 10px;
+    border-bottom: 2px solid white;
+}
+
+.kontakt .zawartosc .text {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.kontakt .zawartosc .info .napis-info {
+    color: rgb(133, 133, 133);
+}
+
+.kontakt .zawartosc .left p {
+    text-align: justify;
+}
+
+.kontakt .zawartosc .left .margines {
+    margin: 10px 0;
+}
+
+.head {
+    margin-bottom: 5px;
+}
+
+.kontakt .zawartosc .left .rzad {
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+.kontakt .zawartosc .rzad i {
+    font-size: 25px;
+}
+
+.kontakt .zawartosc .rzad i {
+    font-size: 25px;
+}
+
+.kontakt .zawartosc .rzad .info {
+    margin-left: 30px;
+    padding-left: 10px;
+    border-left: 1px solid white;
+}
+
+.kontakt .zawartosc .rzad .napis-info span {
+    color: rgb(107, 94, 21);
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.kontakt .zawartosc .kolumna {
+    width: calc(50% - 30px);
+}
+
+.kontakt .zawartosc .kolumna .text-about {
+    border-bottom: 1px solid white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.kontakt .zawartosc .kolumna p span {
+    color: rgb(167, 223, 84);
+}
+
+.kontakt .zawartosc .info .head {
+    font-weight: 500;
+}
+
+.kontakt .right form .pole,
+.kontakt .right form .pola .pole {
+    margin-bottom: 15px;
+    height: 45px;
+    width: 100%;
+}
+
+input {
+    color: black;
+}
+
+.kontakt .right form .pola {
+    display: flex;
+}
+
+.kontakt .right form .name {
+    margin-right: 10px;
+}
+
+.kontakt .right form .email {
+    margin-left: 10px;
+}
+
+.kontakt .right form .textarea {
+    height: 80px;
+    width: 100%;
+}
+
+.kontakt .right form .textarea textarea {
+    resize: none;
+    padding-top: 10px;
+    color: black;
+}
+
+
+.kontakt .right form .pole input,
+.kontakt .right form .textarea textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: 17px;
+    padding: 10px 15px;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    border: 1px solid lightgrey;
+    outline: none;
+}
+
+.kontakt .right form .button button {
+    font-family: sans-serif;
+    background: black;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: .5px;
+    height: 100%;
+    width: 100%;
+    border: 2.5px solid white;
+    border-radius: 6px;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+
+.kontakt .right form .button {
+    height: 47px;
+    width: 170px;
+}
+
+.kontakt .right form .button button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    letter-spacing: 2px;
+    text-decoration: underline;
+    transition: .5s;
+}
+
+.map {
+    text-align: end;
+    width: 100%;
+    margin-top: 5%;
+    padding: 0;
+}
+
+.map p {
+    font-family: sans-serif;
+    font-size: 17px;
+    letter-spacing: 1px;
+    margin-bottom: 3px;
+}
+
+@media only screen and (max-width:1310px) {
+    .nawigacja {
+        height: 80px;
+    }
+}
+
+@media only screen and (max-height:1160px) {
+    * {
+        overflow: unset;
+    }
+}
+

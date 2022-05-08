@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cube.png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="indexladowanie.css">
+    <script src="zegar.js" defer></script>
+    <title>Curriculum Vitae</title>
+</head>
+
+<body>
+    <!-- Na stronie pojawia się animacja dostosowywania tekstu (Układania go) najbardziej widoczna na przykład po ponownym wejściu na stronę, jednak po odświerzeniu jest nie widoczna -->
+
+    <!-- Tutaj znajduje się ekran ładowania strony - Zależny od szybkości wczytywania strony -->
+    <!-- Ekran ładowania znika po pełnym wczytaniu strony -->
+    <!-- Wczytywanie strony jest zależne od mocy komputera -->
+    <div id="loading">
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+    </div>
+
+    <script>
+        var loading = document.getElementById("loading");
+
+        window.addEventListener("load", function(){
+            loading.style.display = "none";
+        });
+    </script>
+    
+    <nav class="nawigacja">
+        <!-- Menu -->
+        <ul class="link-group">
+            <!-- Logo ma znajdować się tylko na stronie startowej -->
+            <a href="LogoNaprawione.png" class="logonav" target="_blank"><img src="LogoNaprawione.png" alt=" " width="55px"></a>
+            <!-- Po kliknięciu otwiera logo w przeglądarce -->
+            <li class="link active"><a href="index.html">Home</a></li>
+            <li class="link"><a href="projects.html">Projects</a></li>
+            <li class="link"><a href="about.html">About</a></li>
+            <li class="link"><a href="contact.html">Contact</a></li>
+            <li><div class="container">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="session">AM</span>
+            </div></li>
+        </ul>
+    </nav>
+
+    <section class="sekcja active">
+        <h1 class="napis">hello, I am <br>Jan</h1>
+        <img src="zdjecie.JPG" class="zdjecie" alt="">
+    </section>
+
+    <footer>
+        <p>&#169; Coppyright 2022</p>
+    </footer>
+
+</body>
+
+<!-- Cała strona nie zawiera błędów, została napisana i wykonana zgodnie z planem -->
+<!-- Pisząc tę stronę zastosowałem wiedzę z całego roku + Rozszerzyłem ją o dodatkowe opcje -->
+<!-- Strona spełnia wszystkie wymagania -->
+
+</html>

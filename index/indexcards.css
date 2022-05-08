@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    font-family: 'Poppins',sans-serif;
+    display: grid;
+    place-items: center;
+    height: 130vh;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px,1fr));
+    grid-gap: 40px;
+    padding: 20px;
+}
+
+.card {
+    background-color: #080707;
+    box-shadow: 0 0 30px rgba(0,0,0,0.18);
+    border-radius: 20px;
+}
+
+.containernav span {
+    cursor: help;
+}
+
+.containernav span:hover {
+    border-bottom: 1px solid white;
+    /*Każda osobna wartość jest podkreślana*/
+}
+
+.container {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    position: relative;
+}
+
+.container:after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.7;
+    border-radius: 20px 20px 0 0;
+    content: "";
+}
+
+img {
+    display: block;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card1>.container:after,
+.card6>.container:after {
+    background-image: linear-gradient(135deg, #0303e9, #fc39f5);
+    opacity: 0.2;
+}
+
+.card2>.container:after,
+.card5>.container:after {
+    background-image: linear-gradient(135deg, #2fdee4, #3ff8d6);
+    opacity: 0.2;
+}
+
+.card3>.container:after,
+.card4>.container:after {
+    background-image: linear-gradient(135deg, #fdac1f, #fa5320);
+    opacity: 0.2;
+}
+
+.details {
+    padding: 20px 10px;
+}
+
+.details>h3 {
+    color: #fff;
+    margin: 10px 0 15px 0;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.details>p {
+    color: #a0a0a0;
+    line-height: 30px;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+@media only screen and (max-width:1410px) {
+    .cards {
+        margin-top: 15%;
+    }
+}

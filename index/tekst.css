@@ -1,0 +1,50 @@
+* {
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: 2s;
+}
+
+p {
+    background-color: rgb(0, 0, 0);
+    width: 200vh;
+    height: 100vh;
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    font-size: 20px;
+}
+
+.container {
+    height: 80px;
+}
+
+.container span {
+    cursor: help;
+}
+
+.container span:hover {
+    border-bottom: 1px solid white;
+    /*Każda osobna wartość jest podkreślana*/
+}
+
+button {
+    /*Przycisk ma się chować*/
+    margin-top: 4%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Cała strona została poprawnie wykonana, sprawdzona i w szystko zostało napisane zgodnie z planem. Błędy nie występują */

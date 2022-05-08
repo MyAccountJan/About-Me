@@ -1,0 +1,37 @@
+* {
+    font-family: sans-serif;
+}
+  
+.wrapper {
+    margin: 0 auto;
+    max-width: 360px;
+}
+  
+.button {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1rem;
+    margin: 1rem 0;
+    margin-top: 15%;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+.buttonfacebook {
+    background-color: #0e0e0e;
+    letter-spacing: 1px;
+}
+
+.buttonfacebook:hover {
+    background-color: #1d1d1d;
+    letter-spacing: .5px;
+    text-decoration: line-through;
+}
+
+.buttonfacebook:before {
+    font-family: "FontAwesome";
+    content: "F";
+    padding-right: 1rem;
+}
+

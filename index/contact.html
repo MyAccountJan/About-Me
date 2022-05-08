@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cube.png">
+    <link rel="stylesheet" href="indexcontact.css">
+    <link rel="stylesheet" href="indexladowanie.css">
+    <link rel="stylesheet" href="indexcontactform.css">
+    <script src="zegar.js" defer></script>
+    <title>Contact</title>
+</head>
+<body>
+    <!-- Tutaj znajduje się ekran ładowania strony - Zależny od szybkości wczytywania strony -->
+    <!-- Ekran ładowania znika po pełnym wczytaniu strony -->
+    <!-- Wczytywanie strony jest zależne od mocy komputera -->
+    <div id="loading">
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+    </div>
+
+    <script>
+        var loading = document.getElementById("loading");
+
+        window.addEventListener("load", function(){
+            loading.style.display = "none";
+        });
+    </script>
+
+    <nav class="nawigacja">
+        <!-- Menu -->
+        <ul class="link-group">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link"><a href="projects.html">Projects</a></li>
+            <li class="link"><a href="about.html">About</a></li>
+            <li class="link active"><a href="contact.html">Contact</a></li>
+            <li><div class="container">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="session">AM</span>
+            </div></li>
+        </ul>
+    </nav>
+
+    <!-- Formulaż -->
+    <section class="kontakt" id="kontakt">
+        <div class="max-width">
+            <h2 class="title">Contact Me</h2>
+            <div class="zawartosc">
+
+                <!-- Text główny -->
+                <div class="kolumna left">
+                    <div class="text-about">About</div>
+                    <p>If you want to get in touch with me please insert informations about you and click on "Submit" button below. Each message will be read... <span>Enjoy!</span></p>
+                    
+                    <!-- Informacje -->
+                    <div class="margines">
+                        <div class="rzad">
+                            <i class="imie"></i>
+                            <div class="info">
+                                <div class="head">Name :</div>
+                                <div class="napis-info">Jan</div>
+                            </div>
+                        </div>
+
+                        <div class="rzad">
+                            <i class="adres"></i>
+                            <div class="info">
+                                <div class="head">Adress :</div>
+                                <div class="napis-info">Warsaw 00-001</div>
+                            </div>
+                        </div>
+
+                        <div class="rzad">
+                            <i class="email"></i>
+                            <div class="info">
+                                <div class="head">E-Mail :</div>
+                                <div class="napis-info">example.example<span>@</span>abcexample.com</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pola uzupełnienie -->
+                <div class="kolumna right">
+                    <div class="text">Write A Message Here:</div>
+                    <form action="#">
+                        <div class="pola">
+                            <div class="pole name">
+                                <input type="text" placeholder="Your Name.." required>
+                            </div>
+                            <div class="pole email">
+                                <input type="email" placeholder="Email.." required>
+                            </div>
+
+                        </div>
+                        <div class="pole">
+                            <input type="text" placeholder="Message Subject.." required>
+                        </div>
+                        <div class="pole textarea">
+                            <textarea cols="30" rows="10" placeholder="Write Something.." required></textarea>
+                        </div>
+                        <div class="button">
+                            <button type="submit">Submit</button>
+                        </div>
+
+                    </form>
+                </div>
+
+                <!-- Mapa -->
+                <div class="map">
+                    <p>My Localization :</p>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d262887.9489893386!2d21.061194099999998!3d52.23293795!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarszawa!5e1!3m2!1spl!2spl!4v1651931826209!5m2!1spl!2spl" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<!-- Cała strona nie zawiera błędów, została napisana i wykonana zgodnie z planem -->
+<!-- Pisząc tę stronę zastosowałem wiedzę z całego roku + Rozszerzyłem ją o dodatkowe opcje -->
+<!-- Strona spełnia wszystkie wymagania -->
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="cube.png">
+    <link rel="stylesheet" href="indexprojects.css">
+    <link rel="stylesheet" href="indexcards.css">
+    <script src="zegar.js" defer></script>
+    <title>Projects</title>
+</head>
+<body>
+    <!-- Tutaj znajduje się ekran ładowania strony - Zależny od szybkości wczytywania strony -->
+    <!-- Ekran ładowania znika po pełnym wczytaniu strony -->
+    <!-- Wczytywanie strony jest zależne od mocy komputera -->
+    <div id="loading">
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+        <div class="obj"></div>
+    </div>
+
+    <script>
+        var loading = document.getElementById("loading");
+
+        window.addEventListener("load", function(){
+            loading.style.display = "none";
+        });
+    </script>
+    
+    <nav class="nawigacja">
+        <!-- Menu -->
+        <ul class="link-group">
+            <li class="link"><a href="index.html">Home</a></li>
+            <li class="link active"><a href="projects.html">Projects</a></li>
+            <li class="link"><a href="about.html">About</a></li>
+            <li class="link"><a href="contact.html">Contact</a></li>
+            <li><div class="containernav">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+                <span id="session">AM</span>
+            </div></li>
+        </ul>
+    </nav>
+
+    <div class="cards">
+        <div class="card card1">
+            <div class="container">
+                <img src="Zegar.png" alt=" ">
+            </div>
+            <div class="details">
+                <h3>Zegar</h3>
+                <a href="https://github.com/MyAccountJan/Zegar.git" target="blank">GitHub Repository</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo earum error sunt quia eum fuga commodi</p>
+            </div>
+        </div>
+        <div class="card card2">
+            <div class="container">
+                <img src="ZegariZiemia.png" alt=" ">
+            </div>
+            <div class="details">
+                <h3>Ziemia i Zegar</h3>
+                <a href="https://github.com/MyAccountJan/Ziemia-i-Zegar.git" target="blank">GitHub Repository</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo earum error sunt quia eum fuga commodi</p>
+            </div>
+        </div>
+        <div class="card card3">
+            <div class="container">
+                <img src="css.png" alt=" ">
+            </div>
+            <div class="details">
+                <h3>HTML + CSS</h3>
+                <a href="https://github.com/MyAccountJan/HTML-CSS.git" target="blank">GitHub Repository</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo earum error sunt quia eum fuga commodi</p>
+            </div>
+        </div>
+        <div class="card card4">
+            <div class="container">
+                <img src="Sześcian.png" alt=" ">
+            </div>
+            <div class="details">
+                <h3>Szescian</h3>
+                <a href="https://github.com/MyAccountJan/Szescian.git" target="blank">GitHub Repository</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo earum error sunt quia eum fuga commodi</p>
+            </div>
+        </div>
+        <div class="card card5">
+            <div class="container">
+                <img src="LoginScreen.png" alt=" ">
+            </div>
+            <div class="details">
+                <h3>Ekran Logowania</h3>
+                <a href="https://github.com/MyAccountJan/Login-Screen.git" target="blank">GitHub Repository</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo earum error sunt quia eum fuga commodi</p>
+            </div>
+        </div>
+        <div class="card card6">
+            <div class="container">
+                <img src="MapaOdsylaczy.png" alt=" ">
+            </div>
+            <div class="details">
+                <h3>Mapa Odsylaczy</h3>
+                <a href="https://github.com/MyAccountJan/Mapa-Odsy-aczy.git" target="blank">GitHub Repository</a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo earum error sunt quia eum fuga commodi</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<!-- Cała strona nie zawiera błędów, została napisana i wykonana zgodnie z planem -->
+<!-- Pisząc tę stronę zastosowałem wiedzę z całego roku + Rozszerzyłem ją o dodatkowe opcje -->
+<!-- Strona spełnia wszystkie wymagania -->
+
+</html>
